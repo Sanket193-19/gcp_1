@@ -1,1 +1,0 @@
-# Healthcare_project_gcp
