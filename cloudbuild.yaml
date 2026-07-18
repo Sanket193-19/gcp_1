@@ -20,3 +20,5 @@ substitutions:
   _DAGS_DIRECTORY: "workflows/"
   _DAGS_BUCKET: "us-central1-demo-instance-61df59a3-bucket" # Replace with your Composer bucket
   _DATA_DIRECTORY: "data/"
+
+  # print
