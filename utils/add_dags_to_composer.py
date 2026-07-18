@@ -55,7 +55,12 @@ if __name__ == "__main__":
     if args.dags_directory and os.path.exists(args.dags_directory):
         upload_to_composer(args.dags_directory, args.dags_bucket, "dags/")
     else:
+
         print(f"⚠️ Skipping DAGs upload: '{args.dags_directory}' directory not found.")
+        print("Current directory:", os.getcwd())
+        print("DAG directory:", args.dags_directory)
+        print("Exists:", os.path.exists(args.dags_directory))
+        print("Absolute path:", os.path.abspath(args.dags_directory))
 
     if args.data_directory and os.path.exists(args.data_directory):
         upload_to_composer(args.data_directory, args.dags_bucket, "data/")
